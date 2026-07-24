@@ -9,7 +9,7 @@ console.log(toWords(6));
 console.log(toWords(9));
 
 
-//Frontend- react, flask, buejs, angular,
+//Frontend- react, flask, buejs, angular,...
 //Common in all -HTMl,CSS(Bootstrap, Tailwind -used for frontend design, ), Event, 
 //Backend - Node.js-reuired js, Springboot, Fast API(Application prograamming interfaace), Django, PHP(personal home page)
 // 24/07/26 Today's Topic : 
