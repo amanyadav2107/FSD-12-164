@@ -30,7 +30,7 @@ task.once("exit", () => {
     console.log("System Shutting down");
 });
 
-task.emit("greet", "Aman Yadav");
+task.emit("greet", "Aman Yadav"); //emit is used for call function
 task.emit("greet", "Amey yadav");
 task.off("greet", working);
 task.emit("greet", "Amuu");
