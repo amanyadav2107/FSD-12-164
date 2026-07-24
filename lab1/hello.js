@@ -20,7 +20,7 @@ const add = (a,b) => {
     return a+b;
 };
 
-Adv arrow function
+//Adv arrow function
 const add2 =(a,b) => a+b;
 
 console.log(sum(20,10));
