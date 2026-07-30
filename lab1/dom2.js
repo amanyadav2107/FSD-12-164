@@ -8,6 +8,7 @@
 // });
 
 // music.emit("click");
+//More than one click
 
 import {EventEmitter } from "events"; //Event emitter kisi v event ko generate krta hai
 

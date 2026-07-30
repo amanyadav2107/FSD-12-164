@@ -1,5 +1,5 @@
 //DOM : Document Object Model 
-//Dom started
+//Dom started:Simple click
 import {EventEmitter } from "events"; //Event emitter kisi v event ko generate krta hai
 
 const button =new EventEmitter();

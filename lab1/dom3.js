@@ -1,3 +1,4 @@
+//More than one click
 import {EventEmitter } from "events";
 
 const button = new EventEmitter();
