@@ -8,5 +8,4 @@ button.on("click",(uname) =>{
 
 button.emit("click", "Aman");
 button.emit("click", "Amey");
-button.emit("click", "Rani");
 button.emit("click");

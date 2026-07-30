@@ -1,4 +1,5 @@
-//DOM : Document Object Model
+//DOM : Document Object Model 
+//Dom started
 import {EventEmitter } from "events"; //Event emitter kisi v event ko generate krta hai
 
 const button =new EventEmitter();
