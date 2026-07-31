@@ -10,11 +10,12 @@ const f3 = ()=>{
 
 function main (){
     console.log("main");
-    setInterval(f1,1000);
+    // setInterval(f1,1000);
     setTimeout(f1,0);
-    setImmidiate(f2) ;//It is running only main not all file
-    f2(); //0 second v kuch time hota hai
-    f3(); //f1 and f2 are independet nhi hai 
+    setImmediate(f2) ;//It is running only main not all file
+    //0 second v kuch time hota hai
+    //f3(); //f1 and f2 are independet nhi hai 
+    process.nextTick(f3); //nexttick pehele run hoga
     console.log("end") //await is used to 
 }
 main();
