@@ -13,4 +13,8 @@
 -> read_Stream 
 ->write_Stream 
 - All functions are promise so it must be call with await keyword.
-
+## Try
+- Try block is used to keep the code jiske andr acception aane ki possibility hai 
+- Catch is for handling acception
+- Finally always execute
+- Throw means apna acceptions khud generate krenge 
