@@ -1,5 +1,30 @@
 import readline from "readline/promises";
 import{stdin, stdout} from "process";
+import {readFile, writeFile} from "fs/promises";
+
+const FILE = "products.json";
+
+const getCart = async() => {
+    const data = await readFile(FILE, 'utf-8');
+    return JSON.parse(data);
+
+}
+
+const saveCart = async (myCart) => {
+    await writeFile(FILE, JSON.stringify(myCart, null, 2));
+};
+const addTocart = async (product) => {
+    const myCart = await getCart();
+    const isFound = myCart.find((item) => item.id === product.id);
+    if(isFound){
+        isFound.qty += product.qty;
+    }else{
+        myCart.push(product);
+    }
+    await saveCart(myCart);
+    console.log(`Product added with id ${product.id} into cart`);
+};
+
 
 const main = async ()=>{
     let choice;
