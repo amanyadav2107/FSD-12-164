@@ -2,7 +2,7 @@ import readline from "readline/promises";
 import{stdin, stdout} from "process";
 import {readFile, writeFile} from "fs/promises";
 
-const FILE = "products.json";
+const FILE = "product.json";
 
 const getCart = async() => {
     const data = await readFile(FILE, 'utf-8');
@@ -25,6 +25,11 @@ const addTocart = async (product) => {
     console.log(`Product added with id ${product.id} into cart`);
 };
 
+const ShowCart = async () => {
+    const myCart = await getCart();
+    console.table(myCart);
+};
+
 
 const main = async ()=>{
     let choice;
@@ -39,10 +44,14 @@ const main = async ()=>{
     choice= await cin.question("Enter your choice: ");
     switch (Number(choice)){
         case 1:
-            console.log("Show products");
+            await ShowCart();
             break;
         case 2:
-            console.log("Product added");
+            let data = await cin.question("enter id, name,price,qty:");
+            const [id, name, price, qty] = data.split(",").map((item) => item.trim());
+            const product = {id: Number(id), name, price: Number(price), qty: Number(qty)};
+            await addTocart(product);
+
             break;
         case 3:
             console.log("remove product");
