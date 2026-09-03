@@ -1,0 +1,19 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "It is buile in Node.js",
+  "main": "prg1.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon prg5.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
